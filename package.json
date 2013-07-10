@@ -1,0 +1,31 @@
+{
+  "name": "http4gfw",
+  "version": "0.0.1",
+  "author": {
+    "name": "yeefont",
+    "email": "yeefont@gmail.com",
+    "url": "http://www.yeefont.com"
+  },
+  "description": "Dancing with GFW",
+  "keywords": [
+    "SOCKS5",
+    "dns",	
+    "tunnel",
+    "http"
+  ],
+  "homepage": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "dependencies": {
+    "event-stream": "2.1.8",
+    "socket.io": "0.8",
+	"native-dns": ">= 0.4.1"
+  },
+  "_id": "http4gfw@0.0.1",
+  "subdomain": "http4gfw",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
