@@ -32,8 +32,8 @@ if (cluster.isMaster) {
   // Workers can share any TCP connection
   // In this case its a proxy server
 if (mode == "http") {
-	var tunnel_address = config.http_dns_server.address; 
-	var tunnel_port = config.http_dns_server.port;
+	var tunnel_address = config.http_sock5_server.address; 
+	var tunnel_port = config.http_sock5_server.port;
 	var self_name = process.pid;
 	var endpoint = null;
 

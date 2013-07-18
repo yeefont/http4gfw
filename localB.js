@@ -41,8 +41,8 @@ var onMessage = function (request, response) {
   var encrypted = CryptoJS.AES.encrypt(askdomain, Passphrase, { format: CryptoJS.JsonFormatter });
    
   var options = {
-    hostname: config.http_sock5_server.address, 
-    port: config.http_sock5_server.port,
+    hostname: config.http_dns_server.address, 
+    port: config.http_dns_server.port,
     path: '/AAAA/' + new Date().getTime() + '/' + encodeURIComponent(encrypted),
     method: 'GET'
   };
